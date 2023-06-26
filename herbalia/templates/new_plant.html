@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1 class="title">Configurações</h1>
+<form method="POST" action="/new_plant">
+    <div class="field">
+        <label class="label">Nome da planta</label>
+        <div class="control">
+            <input class="input" type="text" name="data0">
+        </div>
+    </div>
+    <div class="field">
+        <label class="label">Tempo diário de iluminação (h)</label>
+        <div class="control">
+            <input class="input" type="text" name="data1">
+        </div>
+    </div>
+    <div class="field">
+        <label class="label">Iluminação necessária (w/m²)</label>
+        <div class="control">
+            <input class="input" type="text" name="data2">
+        </div>
+    </div>
+    <div class="field">
+        <label class="label">Índice de umidade do solo</label>
+        <div class="control">
+            <input class="input" type="text" name="data3">
+        </div>
+    </div>
+    <div class="field">
+        <div class="control">
+            <button class="button is-primary" type="submit">Submit</button>
+        </div>
+    </div>
+</form>
+{% endblock %}

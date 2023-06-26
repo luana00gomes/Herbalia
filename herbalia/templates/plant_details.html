@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div style="display: flex;">
+    <div class="container">
+        <h1 class="title">Detalhes da Planta</h1>
+        <p>Nome: {{ plant.name }}</p>
+        <p>Tempo de luz ligada: {{ plant.time_light_on }}</p>
+        <p>Índice de luz: {{ plant.light_indice }}</p>
+        <p>Índice de umidade: {{ plant.humidity_indice }}</p>
+    </div>
+    <div class="container">
+        <button class="button is-round is-info" style="background-color: #75A26D;" action="/send_mttq">Carregar para Horta</button>
+    </div>
+</div>
+
+
+{% endblock %}
