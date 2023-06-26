@@ -121,20 +121,20 @@ def generate_reset_token():
 
 def send_verification_email(email, token):
     # Crie a mensagem de e-mail com o link de verificação
-    msg = Message('smartQI: Verificação de e-mail', sender= 'contato@smartqi.me', recipients=[email])
+    msg = Message('Herbalia: Verificação de e-mail', sender= 'luana00gomes@gmail.com', recipients=[email])
 
     verification_link = url_for('auth.verify_email', token=token, _external=True)
-    msg.body = f'Clique no link a seguir para verificar seu e-mail para sua conta smartQI: {verification_link}'
+    msg.body = f'Clique no link a seguir para verificar seu e-mail para sua conta Herbalia: {verification_link}'
 
     # Envie o e-mail
     mail.send(msg)
 
 def send_reset_email(email, token):
     # Crie a mensagem de e-mail com o link de verificação
-    msg = Message('smartQI: Redefina sua senha', sender= 'contato@smartqi.me', recipients=[email])
+    msg = Message('Herbalia: Redefina sua senha', sender= 'luana00gomes@gmail.com', recipients=[email])
 
     verification_link = url_for('auth.reset_password', token=token, _external=True)
-    msg.body = f'Clique no link a seguir para redefinir sua senha SmartQI: {verification_link}'
+    msg.body = f'Clique no link a seguir para redefinir sua senha Herbalia: {verification_link}'
 
     # Envie o e-mail
     mail.send(msg)
