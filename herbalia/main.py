@@ -1,8 +1,14 @@
 from flask import Blueprint, render_template, request, redirect, url_for
 from flask_login import login_required, current_user
 main = Blueprint('main', __name__)
+import paho.mqtt.client as mqtt
 from .crud import create_new_plant
 from . import db
+import json
+
+# Define as informações de conexão do servidor MQTT
+MQTT_BROKER = 'broker.hivemq.com'
+MQTT_PORT = 1883
 
 @main.route('/', methods=['GET', 'POST'])
 def index():    
@@ -38,7 +44,6 @@ def view_plant(plant_id):
 def delete_plant(plant_id):
     from .models import Plants
     plant = Plants.query.get(plant_id)
-    print("Deleting")
     if plant:
         # Delete the plant from the database
         db.session.delete(plant)
@@ -50,12 +55,30 @@ def delete_plant(plant_id):
 @login_required
 def send_mttq(plant_id):
     from .models import Plants
-    plant = Plants.query.get(plant_id)
-    print("Deleting")
+    plant = Plants.query.filter_by(id=plant_id).first()
+    print("ID ", plant_id)
+    print("GOT ", plant)
     if plant:
-        # Delete the plant from the database
-        db.session.delete(plant)
-        db.session.commit()
+        
+        payload = {
+            'time_light_on': plant.time_light_on,
+            'light_indice': plant.light_indice,
+            'humidity_indice': plant.humidity_indice
+        }
+        
+        import psutil
+        import time
+        client = mqtt.Client()
+
+        # Conecta o cliente ao servidor MQTT
+        client.connect(MQTT_BROKER, MQTT_PORT)
+
+        # Envia o uso de memória do sistema a cada 5 segundos
+        for i in range(1000):
+           
+            client.publish('herbalia', payload=str(payload))
+            print("sent msg: ", str(payload))
+
     
     return redirect(url_for('main.index'))
 
