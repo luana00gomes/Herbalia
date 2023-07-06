@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Data Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}" />
+</head>
+<body>
+    <div class="columns">
+        <aside class="menu column is-2">
+            <ul class="menu-list">
+                <li><a style="color: whitesmoke;" href="{{ url_for('main.index') }}">HOME</a></li>
+                {% if current_user.is_authenticated %}
+                <li>
+                    <div style="display: flex;">
+                        <a style="color: whitesmoke; flex-grow: 1;" href="{{ url_for('main.new_plant') }}">
+                            Nova Planta
+                        </a>
+                        <a  href="{{ url_for('main.new_plant') }}">
+                            <img src="../static/add.png" alt="Add Icon" class="trash-icon">
+                        </a>
+                    </div>
+                </li>
+                {% endif %}
+                {% if current_user.is_authenticated %}
+                {% for plant_id, plant in user_plants.items() %}
+                <li>
+                    <div style="display: flex;">
+
+                   
+                        <a style="color: whitesmoke; flex-grow: 1;" href="{{ url_for('main.view_plant', plant_id=plant.id) }}">
+                            {{ plant.name }}
+                        </a>
+                        <a  href="{{ url_for('main.delete_plant', plant_id=plant.id) }}">
+                            <img src="../static/trash.png" alt="Trash Icon" class="trash-icon">
+                        </a>
+                    </div>
+                        
+                    
+                </li>
+                {% endfor %}
+                {% endif %}
+                {% if current_user.is_authenticated %}
+                <li><a style="color: whitesmoke;" href="{{ url_for('main.profile') }}">Profile</a></li>
+                {% endif %}
+                {% if not current_user.is_authenticated %}
+                    <a tyle="color: whitesmoke;" href="{{ url_for('auth.login') }}" class="navbar-item">
+                        Login
+                    </a>
+                    <a tyle="color: whitesmoke;" href="{{ url_for('auth.signup') }}" class="navbar-item">
+                        Sign Up
+                    </a>
+                {% endif %}
+                {% if current_user.is_authenticated %}
+                <a tyle="color: whitesmoke;" href="{{ url_for('auth.logout') }}" class="navbar-item">
+                    Logout
+                </a>
+                {% endif %}
+            </ul>
+        </aside>
+        <section class="section column">
+            <div class="container">
+                {% block content %}
+                {% endblock %}
+                
+            </div>
+        </section>
+    </div>
+</body>
+</html>

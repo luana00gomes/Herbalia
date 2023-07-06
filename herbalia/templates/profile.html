@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+<h1 class="title">
+Perfil
+</h1>
+<ul class="list-group">
+  <li class="list-group-item"><div>Nome</div><div>{{user.name}}</div></li>
+  <li class="list-group-item"><div>E-mail</div><div>{{user.email}}</div></li>
+</ul>
+{% endblock %}

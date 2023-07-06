@@ -1,0 +1,1467 @@
+2023-06-11 21:57:02,668 - ERROR - Exception on /login [GET]
+Traceback (most recent call last):
+  File "/home/luana/.local/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/luana/.local/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/luana/.local/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/luana/.local/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/luana/Documentos/horta/webpage/herbalia/auth.py", line 14, in login
+    return render_template('login.html')
+  File "/home/luana/.local/lib/python3.10/site-packages/flask/templating.py", line 151, in render_template
+    return _render(app, template, context)
+  File "/home/luana/.local/lib/python3.10/site-packages/flask/templating.py", line 132, in _render
+    rv = template.render(context)
+  File "/home/luana/.local/lib/python3.10/site-packages/jinja2/environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "/home/luana/.local/lib/python3.10/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/luana/Documentos/horta/webpage/herbalia/templates/login.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/luana/Documentos/horta/webpage/herbalia/templates/base.html", line 55, in top-level template code
+    <a href="{{ url_for('main.faq') }}" class="navbar-item">
+  File "/home/luana/.local/lib/python3.10/site-packages/flask/app.py", line 1697, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+  File "/home/luana/.local/lib/python3.10/site-packages/flask/app.py", line 1686, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+  File "/home/luana/.local/lib/python3.10/site-packages/werkzeug/routing/map.py", line 947, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'main.faq'. Did you mean 'main.index' instead?
+2023-06-11 21:57:03,739 - ERROR - Exception on /login [GET]
+Traceback (most recent call last):
+  File "/home/luana/.local/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/luana/.local/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/luana/.local/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/luana/.local/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/luana/Documentos/horta/webpage/herbalia/auth.py", line 14, in login
+    return render_template('login.html')
+  File "/home/luana/.local/lib/python3.10/site-packages/flask/templating.py", line 151, in render_template
+    return _render(app, template, context)
+  File "/home/luana/.local/lib/python3.10/site-packages/flask/templating.py", line 132, in _render
+    rv = template.render(context)
+  File "/home/luana/.local/lib/python3.10/site-packages/jinja2/environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "/home/luana/.local/lib/python3.10/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/luana/Documentos/horta/webpage/herbalia/templates/login.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/luana/Documentos/horta/webpage/herbalia/templates/base.html", line 55, in top-level template code
+    <a href="{{ url_for('main.faq') }}" class="navbar-item">
+  File "/home/luana/.local/lib/python3.10/site-packages/flask/app.py", line 1697, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+  File "/home/luana/.local/lib/python3.10/site-packages/flask/app.py", line 1686, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+  File "/home/luana/.local/lib/python3.10/site-packages/werkzeug/routing/map.py", line 947, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'main.faq'. Did you mean 'main.index' instead?
+2023-06-11 22:09:13,275 - ERROR - Exception on /login [POST]
+Traceback (most recent call last):
+  File "/home/luana/.local/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/luana/.local/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/luana/.local/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/luana/.local/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/luana/Documentos/horta/webpage/herbalia/auth.py", line 73, in login_post
+    return redirect(url_for('main.profile'))
+  File "/home/luana/.local/lib/python3.10/site-packages/flask/helpers.py", line 225, in url_for
+    return current_app.url_for(
+  File "/home/luana/.local/lib/python3.10/site-packages/flask/app.py", line 1697, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+  File "/home/luana/.local/lib/python3.10/site-packages/flask/app.py", line 1686, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+  File "/home/luana/.local/lib/python3.10/site-packages/werkzeug/routing/map.py", line 947, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'main.profile'. Did you mean 'main.index' instead?
+2023-06-11 22:10:11,659 - ERROR - Exception on /login [POST]
+Traceback (most recent call last):
+  File "/home/luana/.local/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/luana/.local/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/luana/.local/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/luana/.local/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/luana/Documentos/horta/webpage/herbalia/auth.py", line 73, in login_post
+    return redirect(url_for('main'))
+  File "/home/luana/.local/lib/python3.10/site-packages/flask/helpers.py", line 225, in url_for
+    return current_app.url_for(
+  File "/home/luana/.local/lib/python3.10/site-packages/flask/app.py", line 1697, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+  File "/home/luana/.local/lib/python3.10/site-packages/flask/app.py", line 1686, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+  File "/home/luana/.local/lib/python3.10/site-packages/werkzeug/routing/map.py", line 947, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'main'. Did you mean 'main.index' instead?
+2023-06-11 22:10:23,216 - ERROR - Exception on /login [POST]
+Traceback (most recent call last):
+  File "/home/luana/.local/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/luana/.local/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/luana/.local/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/luana/.local/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/luana/Documentos/horta/webpage/herbalia/auth.py", line 73, in login_post
+    return redirect(url_for('main'))
+  File "/home/luana/.local/lib/python3.10/site-packages/flask/helpers.py", line 225, in url_for
+    return current_app.url_for(
+  File "/home/luana/.local/lib/python3.10/site-packages/flask/app.py", line 1697, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+  File "/home/luana/.local/lib/python3.10/site-packages/flask/app.py", line 1686, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+  File "/home/luana/.local/lib/python3.10/site-packages/werkzeug/routing/map.py", line 947, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'main'. Did you mean 'main.index' instead?
+2023-06-15 09:09:50,354 - ERROR - Exception on /signup [POST]
+Traceback (most recent call last):
+  File "/home/luana/.local/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/luana/.local/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/luana/.local/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/luana/.local/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/luana/Documentos/horta/webpage/herbalia/auth.py", line 47, in signup_post
+    send_verification_email(email, token)  # Envie o e-mail de verificação
+  File "/home/luana/Documentos/horta/webpage/herbalia/auth.py", line 130, in send_verification_email
+    mail.send(msg)
+  File "/home/luana/.local/lib/python3.10/site-packages/flask_mail.py", line 415, in send
+    with self.connect() as connection:
+  File "/home/luana/.local/lib/python3.10/site-packages/flask_mail.py", line 123, in __enter__
+    self.host = self.configure_host()
+  File "/home/luana/.local/lib/python3.10/site-packages/flask_mail.py", line 144, in configure_host
+    host.login(self.mail.username, self.mail.password)
+  File "/usr/lib/python3.10/smtplib.py", line 750, in login
+    raise last_exception
+  File "/usr/lib/python3.10/smtplib.py", line 739, in login
+    (code, resp) = self.auth(
+  File "/usr/lib/python3.10/smtplib.py", line 662, in auth
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (535, b'5.7.8 Username and Password not accepted. Learn more at\n5.7.8  https://support.google.com/mail/?p=BadCredentials e4-20020a9d5604000000b006ab241d8c42sm6602545oti.17 - gsmtp')
+2023-06-25 16:35:35,915 - ERROR - Exception on /redefine [GET]
+Traceback (most recent call last):
+  File "/home/luana/.local/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/luana/.local/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/luana/.local/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/luana/.local/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/luana/Documentos/horta/webpage/herbalia/auth.py", line 22, in redefine
+    return render_template('redefine.html')
+  File "/home/luana/.local/lib/python3.10/site-packages/flask/templating.py", line 150, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/home/luana/.local/lib/python3.10/site-packages/jinja2/environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/home/luana/.local/lib/python3.10/site-packages/jinja2/environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "/home/luana/.local/lib/python3.10/site-packages/jinja2/environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/home/luana/.local/lib/python3.10/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/home/luana/.local/lib/python3.10/site-packages/flask/templating.py", line 64, in get_source
+    return self._get_source_fast(environment, template)
+  File "/home/luana/.local/lib/python3.10/site-packages/flask/templating.py", line 98, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: redefine.html
+2023-06-25 16:40:01,729 - ERROR - Exception on /signup [POST]
+Traceback (most recent call last):
+  File "/home/luana/.local/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/luana/.local/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/luana/.local/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/luana/.local/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/luana/Documentos/horta/webpage/herbalia/auth.py", line 47, in signup_post
+    send_verification_email(email, token)  # Envie o e-mail de verificação
+  File "/home/luana/Documentos/horta/webpage/herbalia/auth.py", line 130, in send_verification_email
+    mail.send(msg)
+  File "/home/luana/.local/lib/python3.10/site-packages/flask_mail.py", line 415, in send
+    with self.connect() as connection:
+  File "/home/luana/.local/lib/python3.10/site-packages/flask_mail.py", line 123, in __enter__
+    self.host = self.configure_host()
+  File "/home/luana/.local/lib/python3.10/site-packages/flask_mail.py", line 144, in configure_host
+    host.login(self.mail.username, self.mail.password)
+  File "/usr/lib/python3.10/smtplib.py", line 750, in login
+    raise last_exception
+  File "/usr/lib/python3.10/smtplib.py", line 739, in login
+    (code, resp) = self.auth(
+  File "/usr/lib/python3.10/smtplib.py", line 662, in auth
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (535, b'5.7.8 Username and Password not accepted. Learn more at\n5.7.8  https://support.google.com/mail/?p=BadCredentials t19-20020a9d5913000000b006b71f315814sm1890525oth.8 - gsmtp')
+2023-06-26 11:08:18,386 - ERROR - Exception on /redefine [GET]
+Traceback (most recent call last):
+  File "/home/luana/.local/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/luana/.local/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/luana/.local/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/luana/.local/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/luana/Documentos/horta/webpage/herbalia/auth.py", line 22, in redefine
+    return render_template('redefine.html')
+  File "/home/luana/.local/lib/python3.10/site-packages/flask/templating.py", line 150, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/home/luana/.local/lib/python3.10/site-packages/jinja2/environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/home/luana/.local/lib/python3.10/site-packages/jinja2/environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "/home/luana/.local/lib/python3.10/site-packages/jinja2/environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/home/luana/.local/lib/python3.10/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/home/luana/.local/lib/python3.10/site-packages/flask/templating.py", line 64, in get_source
+    return self._get_source_fast(environment, template)
+  File "/home/luana/.local/lib/python3.10/site-packages/flask/templating.py", line 98, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: redefine.html
+2023-06-26 11:50:16,895 - ERROR - Exception on /redefine [GET]
+Traceback (most recent call last):
+  File "/home/luana/.local/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/luana/.local/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/luana/.local/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/luana/.local/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/luana/Documentos/horta/webpage/herbalia/auth.py", line 22, in redefine
+    return render_template('redefine.html')
+  File "/home/luana/.local/lib/python3.10/site-packages/flask/templating.py", line 150, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/home/luana/.local/lib/python3.10/site-packages/jinja2/environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/home/luana/.local/lib/python3.10/site-packages/jinja2/environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "/home/luana/.local/lib/python3.10/site-packages/jinja2/environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/home/luana/.local/lib/python3.10/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/home/luana/.local/lib/python3.10/site-packages/flask/templating.py", line 64, in get_source
+    return self._get_source_fast(environment, template)
+  File "/home/luana/.local/lib/python3.10/site-packages/flask/templating.py", line 98, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: redefine.html
+2023-06-26 11:57:13,659 - ERROR - Exception on /new_plant [POST]
+Traceback (most recent call last):
+  File "/home/luana/.local/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/luana/.local/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/luana/.local/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/luana/.local/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/luana/.local/lib/python3.10/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "/home/luana/Documentos/horta/webpage/herbalia/main.py", line 21, in new_plant
+    create_new_plant(data0, data1, data2, data3)
+  File "/home/luana/Documentos/horta/webpage/herbalia/crud.py", line 5, in create_new_plant
+    new_plant = Plants(name, time_light_on, light_indice, humidity_indice)
+TypeError: __init__() takes 1 positional argument but 5 were given
+2023-06-26 12:34:34,385 - ERROR - Exception on /new_plant [POST]
+Traceback (most recent call last):
+  File "/home/luana/.local/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/luana/.local/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/luana/.local/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/luana/.local/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/luana/.local/lib/python3.10/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "/home/luana/Documentos/horta/webpage/herbalia/main.py", line 21, in new_plant
+    create_new_plant(current_user.get_id(), data0, data1, data2, data3)
+  File "/home/luana/Documentos/horta/webpage/herbalia/crud.py", line 5, in create_new_plant
+    new_plant = Plants(id, name, time_light_on, light_indice, humidity_indice)
+TypeError: __init__() takes 1 positional argument but 6 were given
+2023-06-26 12:47:58,541 - ERROR - Exception on /new_plant [POST]
+Traceback (most recent call last):
+  File "/home/luana/.local/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/luana/.local/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/luana/.local/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/luana/.local/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/luana/.local/lib/python3.10/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "/home/luana/Documentos/horta/webpage/herbalia/main.py", line 21, in new_plant
+    create_new_plant(current_user.get_id(), data0, data1, data2, data3)
+  File "/home/luana/Documentos/horta/webpage/herbalia/crud.py", line 5, in create_new_plant
+    new_plant = Plants(id, name, time_light_on, light_indice, humidity_indice)
+TypeError: __init__() takes 1 positional argument but 6 were given
+2023-06-26 12:50:00,025 - ERROR - Exception on /new_plant [POST]
+Traceback (most recent call last):
+  File "/home/luana/.local/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/luana/.local/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/luana/.local/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/luana/.local/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/luana/.local/lib/python3.10/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "/home/luana/Documentos/horta/webpage/herbalia/main.py", line 21, in new_plant
+    create_new_plant(current_user.get_id(), data0, data1, data2, data3)
+  File "/home/luana/Documentos/horta/webpage/herbalia/crud.py", line 5, in create_new_plant
+    new_plant = Plants(id, name, time_light_on, light_indice, humidity_indice)
+TypeError: __init__() takes 5 positional arguments but 6 were given
+2023-06-26 12:54:01,452 - ERROR - Exception on /new_plant [POST]
+Traceback (most recent call last):
+  File "/home/luana/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1964, in _exec_single_context
+    self.dialect.do_execute(
+  File "/home/luana/.local/lib/python3.10/site-packages/sqlalchemy/engine/default.py", line 748, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.IntegrityError: NOT NULL constraint failed: plants.id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/luana/.local/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/luana/.local/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/luana/.local/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/luana/.local/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/luana/.local/lib/python3.10/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "/home/luana/Documentos/horta/webpage/herbalia/main.py", line 21, in new_plant
+    create_new_plant(current_user.get_id(), data0, data1, data2, data3)
+  File "/home/luana/Documentos/horta/webpage/herbalia/crud.py", line 7, in create_new_plant
+    db.session.commit()
+  File "/home/luana/.local/lib/python3.10/site-packages/sqlalchemy/orm/scoping.py", line 553, in commit
+    return self._proxied.commit()
+  File "/home/luana/.local/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 1903, in commit
+    trans.commit(_to_root=True)
+  File "<string>", line 2, in commit
+  File "/home/luana/.local/lib/python3.10/site-packages/sqlalchemy/orm/state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "/home/luana/.local/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 1218, in commit
+    self._prepare_impl()
+  File "<string>", line 2, in _prepare_impl
+  File "/home/luana/.local/lib/python3.10/site-packages/sqlalchemy/orm/state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "/home/luana/.local/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 1193, in _prepare_impl
+    self.session.flush()
+  File "/home/luana/.local/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 4155, in flush
+    self._flush(objects)
+  File "/home/luana/.local/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 4291, in _flush
+    with util.safe_reraise():
+  File "/home/luana/.local/lib/python3.10/site-packages/sqlalchemy/util/langhelpers.py", line 147, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "/home/luana/.local/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 4252, in _flush
+    flush_context.execute()
+  File "/home/luana/.local/lib/python3.10/site-packages/sqlalchemy/orm/unitofwork.py", line 467, in execute
+    rec.execute(self)
+  File "/home/luana/.local/lib/python3.10/site-packages/sqlalchemy/orm/unitofwork.py", line 644, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "/home/luana/.local/lib/python3.10/site-packages/sqlalchemy/orm/persistence.py", line 93, in save_obj
+    _emit_insert_statements(
+  File "/home/luana/.local/lib/python3.10/site-packages/sqlalchemy/orm/persistence.py", line 1184, in _emit_insert_statements
+    result = connection.execute(
+  File "/home/luana/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1414, in execute
+    return meth(
+  File "/home/luana/.local/lib/python3.10/site-packages/sqlalchemy/sql/elements.py", line 486, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "/home/luana/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1638, in _execute_clauseelement
+    ret = self._execute_context(
+  File "/home/luana/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1842, in _execute_context
+    return self._exec_single_context(
+  File "/home/luana/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1983, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "/home/luana/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 2326, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/home/luana/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1964, in _exec_single_context
+    self.dialect.do_execute(
+  File "/home/luana/.local/lib/python3.10/site-packages/sqlalchemy/engine/default.py", line 748, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.IntegrityError: (sqlite3.IntegrityError) NOT NULL constraint failed: plants.id
+[SQL: INSERT INTO plants (user_id, name, time_light_on, light_indice, humidity_indice) VALUES (?, ?, ?, ?, ?)]
+[parameters: ('3', 'Roseira', '12', '150', '50%')]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2023-06-26 12:55:55,643 - ERROR - Exception on /new_plant [POST]
+Traceback (most recent call last):
+  File "/home/luana/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1964, in _exec_single_context
+    self.dialect.do_execute(
+  File "/home/luana/.local/lib/python3.10/site-packages/sqlalchemy/engine/default.py", line 748, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.IntegrityError: NOT NULL constraint failed: plants.id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/luana/.local/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/luana/.local/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/luana/.local/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/luana/.local/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/luana/.local/lib/python3.10/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "/home/luana/Documentos/horta/webpage/herbalia/main.py", line 21, in new_plant
+    create_new_plant(current_user.get_id(), data0, data1, data2, data3)
+  File "/home/luana/Documentos/horta/webpage/herbalia/crud.py", line 7, in create_new_plant
+    db.session.commit()
+  File "/home/luana/.local/lib/python3.10/site-packages/sqlalchemy/orm/scoping.py", line 553, in commit
+    return self._proxied.commit()
+  File "/home/luana/.local/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 1903, in commit
+    trans.commit(_to_root=True)
+  File "<string>", line 2, in commit
+  File "/home/luana/.local/lib/python3.10/site-packages/sqlalchemy/orm/state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "/home/luana/.local/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 1218, in commit
+    self._prepare_impl()
+  File "<string>", line 2, in _prepare_impl
+  File "/home/luana/.local/lib/python3.10/site-packages/sqlalchemy/orm/state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "/home/luana/.local/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 1193, in _prepare_impl
+    self.session.flush()
+  File "/home/luana/.local/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 4155, in flush
+    self._flush(objects)
+  File "/home/luana/.local/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 4291, in _flush
+    with util.safe_reraise():
+  File "/home/luana/.local/lib/python3.10/site-packages/sqlalchemy/util/langhelpers.py", line 147, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "/home/luana/.local/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 4252, in _flush
+    flush_context.execute()
+  File "/home/luana/.local/lib/python3.10/site-packages/sqlalchemy/orm/unitofwork.py", line 467, in execute
+    rec.execute(self)
+  File "/home/luana/.local/lib/python3.10/site-packages/sqlalchemy/orm/unitofwork.py", line 644, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "/home/luana/.local/lib/python3.10/site-packages/sqlalchemy/orm/persistence.py", line 93, in save_obj
+    _emit_insert_statements(
+  File "/home/luana/.local/lib/python3.10/site-packages/sqlalchemy/orm/persistence.py", line 1184, in _emit_insert_statements
+    result = connection.execute(
+  File "/home/luana/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1414, in execute
+    return meth(
+  File "/home/luana/.local/lib/python3.10/site-packages/sqlalchemy/sql/elements.py", line 486, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "/home/luana/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1638, in _execute_clauseelement
+    ret = self._execute_context(
+  File "/home/luana/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1842, in _execute_context
+    return self._exec_single_context(
+  File "/home/luana/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1983, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "/home/luana/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 2326, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/home/luana/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1964, in _exec_single_context
+    self.dialect.do_execute(
+  File "/home/luana/.local/lib/python3.10/site-packages/sqlalchemy/engine/default.py", line 748, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.IntegrityError: (sqlite3.IntegrityError) NOT NULL constraint failed: plants.id
+[SQL: INSERT INTO plants (user_id, name, time_light_on, light_indice, humidity_indice) VALUES (?, ?, ?, ?, ?)]
+[parameters: ('3', 'Roseira', '12', '150', '50%')]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2023-06-26 15:00:45,079 - ERROR - Exception on /new_plant [POST]
+Traceback (most recent call last):
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1965, in _exec_single_context
+    self.dialect.do_execute(
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/sqlalchemy/engine/default.py", line 921, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.IntegrityError: NOT NULL constraint failed: plants.id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "/home/luana/Documentos/horta/webpage/herbalia/main.py", line 21, in new_plant
+    create_new_plant(current_user.get_id(), data0, data1, data2, data3)
+  File "/home/luana/Documentos/horta/webpage/herbalia/crud.py", line 7, in create_new_plant
+    db.session.commit()
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/sqlalchemy/orm/scoping.py", line 552, in commit
+    return self._proxied.commit()
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 1920, in commit
+    trans.commit(_to_root=True)
+  File "<string>", line 2, in commit
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/sqlalchemy/orm/state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 1236, in commit
+    self._prepare_impl()
+  File "<string>", line 2, in _prepare_impl
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/sqlalchemy/orm/state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 1211, in _prepare_impl
+    self.session.flush()
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 4163, in flush
+    self._flush(objects)
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 4298, in _flush
+    with util.safe_reraise():
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/sqlalchemy/util/langhelpers.py", line 147, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 4259, in _flush
+    flush_context.execute()
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/sqlalchemy/orm/unitofwork.py", line 466, in execute
+    rec.execute(self)
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/sqlalchemy/orm/unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/sqlalchemy/orm/persistence.py", line 93, in save_obj
+    _emit_insert_statements(
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/sqlalchemy/orm/persistence.py", line 1226, in _emit_insert_statements
+    result = connection.execute(
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1412, in execute
+    return meth(
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/sqlalchemy/sql/elements.py", line 483, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1635, in _execute_clauseelement
+    ret = self._execute_context(
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1844, in _execute_context
+    return self._exec_single_context(
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1984, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 2339, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1965, in _exec_single_context
+    self.dialect.do_execute(
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/sqlalchemy/engine/default.py", line 921, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.IntegrityError: (sqlite3.IntegrityError) NOT NULL constraint failed: plants.id
+[SQL: INSERT INTO plants (user_id, name, time_light_on, light_indice, humidity_indice) VALUES (?, ?, ?, ?, ?)]
+[parameters: ('3', 'Roseira', '12', '150', '50%')]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2023-06-26 15:03:35,354 - ERROR - Exception on /new_plant [POST]
+Traceback (most recent call last):
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1965, in _exec_single_context
+    self.dialect.do_execute(
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/sqlalchemy/engine/default.py", line 921, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.IntegrityError: NOT NULL constraint failed: plants.id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "/home/luana/Documentos/horta/webpage/herbalia/main.py", line 21, in new_plant
+    create_new_plant(current_user.get_id(), data0, data1, data2, data3)
+  File "/home/luana/Documentos/horta/webpage/herbalia/crud.py", line 7, in create_new_plant
+    db.session.commit()
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/sqlalchemy/orm/scoping.py", line 552, in commit
+    return self._proxied.commit()
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 1920, in commit
+    trans.commit(_to_root=True)
+  File "<string>", line 2, in commit
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/sqlalchemy/orm/state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 1236, in commit
+    self._prepare_impl()
+  File "<string>", line 2, in _prepare_impl
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/sqlalchemy/orm/state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 1211, in _prepare_impl
+    self.session.flush()
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 4163, in flush
+    self._flush(objects)
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 4298, in _flush
+    with util.safe_reraise():
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/sqlalchemy/util/langhelpers.py", line 147, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 4259, in _flush
+    flush_context.execute()
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/sqlalchemy/orm/unitofwork.py", line 466, in execute
+    rec.execute(self)
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/sqlalchemy/orm/unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/sqlalchemy/orm/persistence.py", line 93, in save_obj
+    _emit_insert_statements(
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/sqlalchemy/orm/persistence.py", line 1226, in _emit_insert_statements
+    result = connection.execute(
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1412, in execute
+    return meth(
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/sqlalchemy/sql/elements.py", line 483, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1635, in _execute_clauseelement
+    ret = self._execute_context(
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1844, in _execute_context
+    return self._exec_single_context(
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1984, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 2339, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1965, in _exec_single_context
+    self.dialect.do_execute(
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/sqlalchemy/engine/default.py", line 921, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.IntegrityError: (sqlite3.IntegrityError) NOT NULL constraint failed: plants.id
+[SQL: INSERT INTO plants (user_id, name, time_light_on, light_indice, humidity_indice) VALUES (?, ?, ?, ?, ?)]
+[parameters: (3, 'Roseira', '12', '150', '50')]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2023-06-26 15:04:45,228 - ERROR - Exception on /new_plant [POST]
+Traceback (most recent call last):
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1965, in _exec_single_context
+    self.dialect.do_execute(
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/sqlalchemy/engine/default.py", line 921, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.IntegrityError: NOT NULL constraint failed: plants.id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "/home/luana/Documentos/horta/webpage/herbalia/main.py", line 21, in new_plant
+    create_new_plant(current_user.get_id(), data0, data1, data2, data3)
+  File "/home/luana/Documentos/horta/webpage/herbalia/crud.py", line 7, in create_new_plant
+    db.session.commit()
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/sqlalchemy/orm/scoping.py", line 552, in commit
+    return self._proxied.commit()
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 1920, in commit
+    trans.commit(_to_root=True)
+  File "<string>", line 2, in commit
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/sqlalchemy/orm/state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 1236, in commit
+    self._prepare_impl()
+  File "<string>", line 2, in _prepare_impl
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/sqlalchemy/orm/state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 1211, in _prepare_impl
+    self.session.flush()
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 4163, in flush
+    self._flush(objects)
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 4298, in _flush
+    with util.safe_reraise():
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/sqlalchemy/util/langhelpers.py", line 147, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 4259, in _flush
+    flush_context.execute()
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/sqlalchemy/orm/unitofwork.py", line 466, in execute
+    rec.execute(self)
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/sqlalchemy/orm/unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/sqlalchemy/orm/persistence.py", line 93, in save_obj
+    _emit_insert_statements(
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/sqlalchemy/orm/persistence.py", line 1226, in _emit_insert_statements
+    result = connection.execute(
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1412, in execute
+    return meth(
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/sqlalchemy/sql/elements.py", line 483, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1635, in _execute_clauseelement
+    ret = self._execute_context(
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1844, in _execute_context
+    return self._exec_single_context(
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1984, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 2339, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1965, in _exec_single_context
+    self.dialect.do_execute(
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/sqlalchemy/engine/default.py", line 921, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.IntegrityError: (sqlite3.IntegrityError) NOT NULL constraint failed: plants.id
+[SQL: INSERT INTO plants (user_id, name, time_light_on, light_indice, humidity_indice) VALUES (?, ?, ?, ?, ?)]
+[parameters: (3, 'Roseira', 12, 150, 50)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2023-06-26 15:06:57,607 - ERROR - Exception on /new_plant [POST]
+Traceback (most recent call last):
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1965, in _exec_single_context
+    self.dialect.do_execute(
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/sqlalchemy/engine/default.py", line 921, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.IntegrityError: NOT NULL constraint failed: plants.id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "/home/luana/Documentos/horta/webpage/herbalia/main.py", line 21, in new_plant
+    create_new_plant(current_user.get_id(), data0, data1, data2, data3)
+  File "/home/luana/Documentos/horta/webpage/herbalia/crud.py", line 7, in create_new_plant
+    db.session.commit()
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/sqlalchemy/orm/scoping.py", line 552, in commit
+    return self._proxied.commit()
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 1920, in commit
+    trans.commit(_to_root=True)
+  File "<string>", line 2, in commit
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/sqlalchemy/orm/state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 1236, in commit
+    self._prepare_impl()
+  File "<string>", line 2, in _prepare_impl
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/sqlalchemy/orm/state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 1211, in _prepare_impl
+    self.session.flush()
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 4163, in flush
+    self._flush(objects)
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 4298, in _flush
+    with util.safe_reraise():
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/sqlalchemy/util/langhelpers.py", line 147, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 4259, in _flush
+    flush_context.execute()
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/sqlalchemy/orm/unitofwork.py", line 466, in execute
+    rec.execute(self)
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/sqlalchemy/orm/unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/sqlalchemy/orm/persistence.py", line 93, in save_obj
+    _emit_insert_statements(
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/sqlalchemy/orm/persistence.py", line 1226, in _emit_insert_statements
+    result = connection.execute(
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1412, in execute
+    return meth(
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/sqlalchemy/sql/elements.py", line 483, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1635, in _execute_clauseelement
+    ret = self._execute_context(
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1844, in _execute_context
+    return self._exec_single_context(
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1984, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 2339, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1965, in _exec_single_context
+    self.dialect.do_execute(
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/sqlalchemy/engine/default.py", line 921, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.IntegrityError: (sqlite3.IntegrityError) NOT NULL constraint failed: plants.id
+[SQL: INSERT INTO plants (user_id, name, time_light_on, light_indice, humidity_indice) VALUES (?, ?, ?, ?, ?)]
+[parameters: (3, 'Roseira', 12, 150, 50)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2023-06-26 15:12:05,046 - ERROR - Exception on /new_plant [POST]
+Traceback (most recent call last):
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1965, in _exec_single_context
+    self.dialect.do_execute(
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/sqlalchemy/engine/default.py", line 921, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.IntegrityError: NOT NULL constraint failed: plants.id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "/home/luana/Documentos/horta/webpage/herbalia/main.py", line 21, in new_plant
+    create_new_plant(current_user.get_id(), data0, data1, data2, data3)
+  File "/home/luana/Documentos/horta/webpage/herbalia/crud.py", line 7, in create_new_plant
+    db.session.commit()
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/sqlalchemy/orm/scoping.py", line 552, in commit
+    return self._proxied.commit()
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 1920, in commit
+    trans.commit(_to_root=True)
+  File "<string>", line 2, in commit
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/sqlalchemy/orm/state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 1236, in commit
+    self._prepare_impl()
+  File "<string>", line 2, in _prepare_impl
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/sqlalchemy/orm/state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 1211, in _prepare_impl
+    self.session.flush()
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 4163, in flush
+    self._flush(objects)
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 4298, in _flush
+    with util.safe_reraise():
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/sqlalchemy/util/langhelpers.py", line 147, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 4259, in _flush
+    flush_context.execute()
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/sqlalchemy/orm/unitofwork.py", line 466, in execute
+    rec.execute(self)
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/sqlalchemy/orm/unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/sqlalchemy/orm/persistence.py", line 93, in save_obj
+    _emit_insert_statements(
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/sqlalchemy/orm/persistence.py", line 1226, in _emit_insert_statements
+    result = connection.execute(
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1412, in execute
+    return meth(
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/sqlalchemy/sql/elements.py", line 483, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1635, in _execute_clauseelement
+    ret = self._execute_context(
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1844, in _execute_context
+    return self._exec_single_context(
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1984, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 2339, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1965, in _exec_single_context
+    self.dialect.do_execute(
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/sqlalchemy/engine/default.py", line 921, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.IntegrityError: (sqlite3.IntegrityError) NOT NULL constraint failed: plants.id
+[SQL: INSERT INTO plants (user_id, name, time_light_on, light_indice, humidity_indice) VALUES (?, ?, ?, ?, ?)]
+[parameters: (3, 'Roseira', 12, 150, 50)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2023-06-26 15:23:32,127 - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/luana/Documentos/horta/webpage/herbalia/main.py", line 8, in index
+    return render_template('index.html')
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/templating.py", line 151, in render_template
+    return _render(app, template, context)
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/templating.py", line 132, in _render
+    rv = template.render(context)
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/jinja2/environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/luana/Documentos/horta/webpage/herbalia/templates/index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/luana/Documentos/horta/webpage/herbalia/templates/base.html", line 17, in top-level template code
+    {% for plant in user_plants %}
+TypeError: 'function' object is not iterable
+2023-06-26 15:23:34,296 - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/luana/Documentos/horta/webpage/herbalia/main.py", line 8, in index
+    return render_template('index.html')
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/templating.py", line 151, in render_template
+    return _render(app, template, context)
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/templating.py", line 132, in _render
+    rv = template.render(context)
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/jinja2/environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/luana/Documentos/horta/webpage/herbalia/templates/index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/luana/Documentos/horta/webpage/herbalia/templates/base.html", line 17, in top-level template code
+    {% for plant in user_plants %}
+TypeError: 'function' object is not iterable
+2023-06-26 15:26:43,454 - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/luana/Documentos/horta/webpage/herbalia/main.py", line 8, in index
+    return render_template('index.html')
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/templating.py", line 151, in render_template
+    return _render(app, template, context)
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/templating.py", line 132, in _render
+    rv = template.render(context)
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/jinja2/environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/luana/Documentos/horta/webpage/herbalia/templates/index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/luana/Documentos/horta/webpage/herbalia/templates/base.html", line 17, in top-level template code
+    {% for plant in user_plants %}
+TypeError: 'function' object is not iterable
+2023-06-26 15:27:05,157 - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/luana/Documentos/horta/webpage/herbalia/main.py", line 8, in index
+    return render_template('index.html')
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/templating.py", line 151, in render_template
+    return _render(app, template, context)
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/templating.py", line 132, in _render
+    rv = template.render(context)
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/jinja2/environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/luana/Documentos/horta/webpage/herbalia/templates/index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/luana/Documentos/horta/webpage/herbalia/templates/base.html", line 17, in top-level template code
+    {% for plant in user_plants %}
+TypeError: 'function' object is not iterable
+2023-06-26 15:30:17,837 - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/luana/Documentos/horta/webpage/herbalia/main.py", line 8, in index
+    return render_template('index.html')
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/templating.py", line 151, in render_template
+    return _render(app, template, context)
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/templating.py", line 128, in _render
+    app.update_template_context(context)
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/app.py", line 737, in update_template_context
+    context.update(func())
+  File "/home/luana/Documentos/horta/webpage/herbalia/__init__.py", line 59, in inject_user_plants
+    return dict(user_plants)
+TypeError: cannot convert dictionary update sequence element #0 to a sequence
+2023-06-26 15:31:49,493 - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/luana/Documentos/horta/webpage/herbalia/main.py", line 8, in index
+    return render_template('index.html')
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/templating.py", line 151, in render_template
+    return _render(app, template, context)
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/templating.py", line 128, in _render
+    app.update_template_context(context)
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/app.py", line 737, in update_template_context
+    context.update(func())
+TypeError: cannot convert dictionary update sequence element #0 to a sequence
+2023-06-26 15:40:23,421 - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/luana/Documentos/horta/webpage/herbalia/main.py", line 8, in index
+    return render_template('index.html')
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/templating.py", line 150, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/jinja2/environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/jinja2/environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/jinja2/environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/jinja2/loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/jinja2/environment.py", line 768, in compile
+    self.handle_exception(source=source_hint)
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/luana/Documentos/horta/webpage/herbalia/templates/index.html", line 10, in template
+    {% endfor %}
+jinja2.exceptions.TemplateSyntaxError: Unexpected end of template. Jinja was looking for the following tags: 'endblock'. The innermost block that needs to be closed is 'block'.
+2023-06-26 15:40:24,600 - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/luana/Documentos/horta/webpage/herbalia/main.py", line 8, in index
+    return render_template('index.html')
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/templating.py", line 150, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/jinja2/environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/jinja2/environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/jinja2/environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/jinja2/loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/jinja2/environment.py", line 768, in compile
+    self.handle_exception(source=source_hint)
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/luana/Documentos/horta/webpage/herbalia/templates/index.html", line 10, in template
+    {% endfor %}
+jinja2.exceptions.TemplateSyntaxError: Unexpected end of template. Jinja was looking for the following tags: 'endblock'. The innermost block that needs to be closed is 'block'.
+2023-06-26 15:41:48,901 - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/luana/Documentos/horta/webpage/herbalia/main.py", line 8, in index
+    return render_template('index.html')
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/templating.py", line 150, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/jinja2/environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/jinja2/environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/jinja2/environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/jinja2/loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/jinja2/environment.py", line 768, in compile
+    self.handle_exception(source=source_hint)
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/luana/Documentos/horta/webpage/herbalia/templates/index.html", line 2, in template
+    {% block content %}
+jinja2.exceptions.TemplateSyntaxError: Unexpected end of template. Jinja was looking for the following tags: 'endblock'. The innermost block that needs to be closed is 'block'.
+2023-06-26 15:41:49,763 - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/luana/Documentos/horta/webpage/herbalia/main.py", line 8, in index
+    return render_template('index.html')
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/templating.py", line 150, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/jinja2/environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/jinja2/environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/jinja2/environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/jinja2/loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/jinja2/environment.py", line 768, in compile
+    self.handle_exception(source=source_hint)
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/luana/Documentos/horta/webpage/herbalia/templates/index.html", line 2, in template
+    {% block content %}
+jinja2.exceptions.TemplateSyntaxError: Unexpected end of template. Jinja was looking for the following tags: 'endblock'. The innermost block that needs to be closed is 'block'.
+2023-06-26 15:41:50,398 - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/luana/Documentos/horta/webpage/herbalia/main.py", line 8, in index
+    return render_template('index.html')
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/templating.py", line 150, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/jinja2/environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/jinja2/environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/jinja2/environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/jinja2/loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/jinja2/environment.py", line 768, in compile
+    self.handle_exception(source=source_hint)
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/luana/Documentos/horta/webpage/herbalia/templates/index.html", line 2, in template
+    {% block content %}
+jinja2.exceptions.TemplateSyntaxError: Unexpected end of template. Jinja was looking for the following tags: 'endblock'. The innermost block that needs to be closed is 'block'.
+2023-06-26 15:57:30,263 - ERROR - Exception on /redefine [GET]
+Traceback (most recent call last):
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/luana/Documentos/horta/webpage/herbalia/auth.py", line 22, in redefine
+    return render_template('redefine.html')
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/templating.py", line 150, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/jinja2/environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/jinja2/environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/jinja2/environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/templating.py", line 64, in get_source
+    return self._get_source_fast(environment, template)
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/templating.py", line 98, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: redefine.html
+2023-06-26 16:09:06,466 - ERROR - Exception on /plant/1 [GET]
+Traceback (most recent call last):
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/luana/Documentos/horta/webpage/herbalia/main.py", line 32, in view_plant
+    return render_template('plant_details.html', plant=plant)
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/templating.py", line 151, in render_template
+    return _render(app, template, context)
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/templating.py", line 132, in _render
+    rv = template.render(context)
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/jinja2/environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/luana/Documentos/horta/webpage/herbalia/templates/plant_details.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/luana/Documentos/horta/webpage/herbalia/templates/base.html", line 47, in template
+    {% endblock %}
+jinja2.exceptions.TemplateSyntaxError: Unexpected end of template. Jinja was looking for the following tags: 'elif' or 'else' or 'endif'. The innermost block that needs to be closed is 'if'.
+2023-06-26 16:09:07,418 - ERROR - Exception on /plant/1 [GET]
+Traceback (most recent call last):
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/luana/Documentos/horta/webpage/herbalia/main.py", line 32, in view_plant
+    return render_template('plant_details.html', plant=plant)
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/templating.py", line 151, in render_template
+    return _render(app, template, context)
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/templating.py", line 132, in _render
+    rv = template.render(context)
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/jinja2/environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/luana/Documentos/horta/webpage/herbalia/templates/plant_details.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/luana/Documentos/horta/webpage/herbalia/templates/base.html", line 47, in template
+    {% endblock %}
+jinja2.exceptions.TemplateSyntaxError: Unexpected end of template. Jinja was looking for the following tags: 'elif' or 'else' or 'endif'. The innermost block that needs to be closed is 'if'.
+2023-06-26 16:27:19,711 - ERROR - Exception on /profile [GET]
+Traceback (most recent call last):
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "/home/luana/Documentos/horta/webpage/herbalia/main.py", line 53, in profile
+    return render_template('profile.html')
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/templating.py", line 151, in render_template
+    return _render(app, template, context)
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/templating.py", line 132, in _render
+    rv = template.render(context)
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/jinja2/environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/luana/Documentos/horta/webpage/herbalia/templates/profile.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/luana/Documentos/horta/webpage/herbalia/templates/base.html", line 54, in top-level template code
+    {% block content %}
+  File "/home/luana/Documentos/horta/webpage/herbalia/templates/profile.html", line 7, in block 'content'
+    <li class="list-group-item"><div>Nome</div><div>{{user.name}}</div></li>
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/jinja2/environment.py", line 485, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'user' is undefined
+2023-06-26 16:42:14,733 - ERROR - Exception on /redefine [GET]
+Traceback (most recent call last):
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/luana/Documentos/horta/webpage/herbalia/auth.py", line 22, in redefine
+    return render_template('redefine.html')
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/templating.py", line 150, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/jinja2/environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/jinja2/environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/jinja2/environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/templating.py", line 64, in get_source
+    return self._get_source_fast(environment, template)
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/templating.py", line 98, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: redefine.html
+2023-06-26 16:50:46,413 - ERROR - Exception on /redefine [GET]
+Traceback (most recent call last):
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/luana/Documentos/horta/webpage/herbalia/auth.py", line 22, in redefine
+    return render_template('redefine.html')
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/templating.py", line 150, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/jinja2/environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/jinja2/environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/jinja2/environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/templating.py", line 64, in get_source
+    return self._get_source_fast(environment, template)
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/templating.py", line 98, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: redefine.html
+2023-06-28 21:38:25,486 - ERROR - Exception on /plant/send_mttq/2 [GET]
+Traceback (most recent call last):
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "/home/luana/Documentos/horta/webpage/herbalia/main.py", line 64, in send_mttq
+    payload = json.dumps(plant)
+  File "/usr/lib/python3.10/json/__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+  File "/usr/lib/python3.10/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.10/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/usr/lib/python3.10/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Query is not JSON serializable
+2023-06-28 21:41:45,470 - ERROR - Exception on /plant/send_mttq/2 [GET]
+Traceback (most recent call last):
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "/home/luana/Documentos/horta/webpage/herbalia/main.py", line 64, in send_mttq
+    payload = json.dumps(plant)
+  File "/usr/lib/python3.10/json/__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+  File "/usr/lib/python3.10/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.10/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/usr/lib/python3.10/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Plants is not JSON serializable
+2023-06-28 23:49:15,090 - ERROR - Exception on /plant/send_mttq/1 [GET]
+Traceback (most recent call last):
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "/home/luana/Documentos/horta/webpage/herbalia/main.py", line 72, in send_mttq
+    import psutil
+ModuleNotFoundError: No module named 'psutil'
+2023-06-28 23:56:49,956 - ERROR - Exception on /plant/send_mttq/1 [GET]
+Traceback (most recent call last):
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "/home/luana/Documentos/horta/webpage/herbalia/main.py", line 84, in send_mttq
+    client.publish('herbalia', payload=payload)
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/paho/mqtt/client.py", line 1247, in publish
+    raise TypeError(
+TypeError: payload must be a string, bytearray, int, float or None.
+2023-07-06 00:04:31,161 - ERROR - Exception on /plant/send_mttq/2 [GET]
+Traceback (most recent call last):
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "/home/luana/Documentos/horta/webpage/herbalia/main.py", line 74, in send_mttq
+    client.connect(MQTT_BROKER, MQTT_PORT)
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/paho/mqtt/client.py", line 914, in connect
+    return self.reconnect()
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/paho/mqtt/client.py", line 1044, in reconnect
+    sock = self._create_socket_connection()
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/paho/mqtt/client.py", line 3685, in _create_socket_connection
+    return socket.create_connection(addr, timeout=self._connect_timeout, source_address=source)
+  File "/usr/lib/python3.10/socket.py", line 824, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+  File "/usr/lib/python3.10/socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+2023-07-06 00:14:25,567 - ERROR - Exception on /plant/send_mttq/1 [GET]
+Traceback (most recent call last):
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "/home/luana/Documentos/horta/webpage/herbalia/main.py", line 70, in send_mttq
+    payload = "@"+plant.time_light_on+"#"+plant.light_indice+"$"+plant.humidity_indice+"&"
+TypeError: can only concatenate str (not "int") to str
+2023-07-06 00:14:33,851 - ERROR - Exception on /plant/send_mttq/2 [GET]
+Traceback (most recent call last):
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "/home/luana/Documentos/horta/webpage/herbalia/main.py", line 70, in send_mttq
+    payload = "@"+plant.time_light_on+"#"+plant.light_indice+"$"+plant.humidity_indice+"&"
+TypeError: can only concatenate str (not "int") to str
+2023-07-06 00:14:36,979 - ERROR - Exception on /plant/send_mttq/2 [GET]
+Traceback (most recent call last):
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "/home/luana/Documentos/horta/webpage/herbalia/main.py", line 70, in send_mttq
+    payload = "@"+plant.time_light_on+"#"+plant.light_indice+"$"+plant.humidity_indice+"&"
+TypeError: can only concatenate str (not "int") to str
+2023-07-06 00:14:53,715 - ERROR - Exception on /plant/send_mttq/1 [GET]
+Traceback (most recent call last):
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/luana/Documentos/horta/webpage/venv/lib/python3.10/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "/home/luana/Documentos/horta/webpage/herbalia/main.py", line 70, in send_mttq
+    payload = "@"+plant.time_light_on+"#"+plant.light_indice+"$"+plant.humidity_indice+"&"
+TypeError: can only concatenate str (not "int") to str

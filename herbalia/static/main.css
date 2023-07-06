@@ -1,0 +1,53 @@
+html, body {
+    height: 100%;
+    color: #687D56;
+}
+
+.columns {
+    height: 100%;
+}
+
+.aside-container {
+    display: flex;
+}
+
+aside {
+    height: 100%;
+}
+
+.menu-list {
+    flex-grow: 1;
+}
+
+body {
+    background-image: url("../static/bg2.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+
+h3, h2, p, h1, a, form, div, label{
+    color: #687D56 !important;
+}
+
+.section {
+    width: 50%;
+    margin-bottom: 0;
+}
+
+aside{
+    background-color: #75A26D;
+    color: whitesmoke;
+    height: 100%;
+}
+
+.menu-item:hover {
+    color: #687D56;
+}
+
+.trash-icon{
+    margin-left: auto;
+    width: 15px;
+    height: 15px;
+}
